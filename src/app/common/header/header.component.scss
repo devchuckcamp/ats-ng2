@@ -1,0 +1,35 @@
+.page-header-inner{
+    background-color: #A81D32;
+    padding: 20px 0;
+    padding-left:30px;
+    padding-right: 0!important;
+    margin-right: 0 !important;
+}
+.dashboard{
+    color: #fafafa;
+}
+.account-toogle{
+    padding-top: 0.2em!important;
+}
+a.dropdown-toggle{
+    color: #fafafa!important;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+    i{
+        font-size: 30px;
+    }
+}
+.account-menu{
+    width: 100px;
+    left:auto!important;
+    top: 85%;
+    right: 2.2%!important;
+}
+.logout-btn{
+    cursor: pointer;
+    &:hover{
+        cursor:pointer;
+    }
+}

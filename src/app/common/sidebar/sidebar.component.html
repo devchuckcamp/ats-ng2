@@ -1,0 +1,38 @@
+<div class="col sidebar-menu-container ">
+    <div class="sidebar-menus col text-left">
+        <div class="sidebar-menu-control row" *ngIf="viewAppointmentMenu">
+            <a routerLink="/dashboard/appointment" [routerLinkActive]="['router-link-active']">Appoinment</a>
+        </div>        
+        <div class="sidebar-menu-control row" *ngIf="viewScheduleMenu">
+            <a routerLink="/dashboard/schedule" [routerLinkActive]="['router-link-active']">Schedule</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewPatientMenu">
+            <a routerLink="/dashboard/patient" [routerLinkActive]="['router-link-active']">Patient</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewClinicMenu">
+            <a routerLink="/dashboard/clinic" [routerLinkActive]="['router-link-active']">Clinic</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewDoctorMenu">
+            <a routerLink="/dashboard/doctor" [routerLinkActive]="['router-link-active']">Doctor</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewSecretaryMenu">
+            <a routerLink="/dashboard/secretary" [routerLinkActive]="['router-link-active']">Secretary</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewPharmacyMenu">
+            <a routerLink="/dashboard/pharmacy" [routerLinkActive]="['router-link-active']">Pharmacy</a>
+        </div>        
+        <div class="sidebar-menu-control row" *ngIf="viewPharmacistMenu">
+            <a routerLink="/dashboard/pharmacist" [routerLinkActive]="['router-link-active']">Pharmacist</a>
+        </div>
+        <div class="sidebar-menu-control row" *ngIf="viewInfoMenu">
+            <a routerLink="/dashboard/profile/{{loggedIn.id}}" [routerLinkActive]="['router-link-active']">Info</a>
+        </div>
+         <!--<div class="sidebar-menu-control row" *ngIf="viewStatisticMenu">
+            <a routerLink="/dashboard/statistics" [routerLinkActive]="['router-link-active']">Statistics</a>
+        </div>-->
+        <div class="sidebar-menu-control row" *ngIf="viewStatisticMenu">
+            <a routerLink="/dashboard/audit" [routerLinkActive]="['router-link-active']">Audit Trail</a>
+        </div>
+        <!--loggedIn-->
+    </div>
+</div>

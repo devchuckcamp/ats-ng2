@@ -1,0 +1,66 @@
+<table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+    <thead>
+            <tr>
+                    <!-- <th>
+                            <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                        <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes" />
+                        <span></span>
+                    </label>
+                    </th> -->
+                    <th> Position </th>
+                    <th> Description </th>
+                    <th> Level </th>
+            </tr>
+    </thead>
+    <tbody *ngIf="jobs">
+            <tr class="" *ngFor="let job of jobs">
+                    <!-- <td>
+                            <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                        <input type="checkbox" class="checkboxes" value="1" />
+                        <span></span>
+                    </label>
+                    </td> -->
+                    <td> 
+                        {{ job.title }} 
+                        <mat-menu #appMenu="matMenu">
+                            <button mat-menu-item> Settings </button>
+                            <button mat-menu-item> Help </button>
+                        </mat-menu>
+                          
+                        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #rootMenu="matMenu">
+                            <button mat-menu-item [matMenuTriggerFor]="subMenu">Power</button>
+                            <button mat-menu-item>System settings</button>
+                          </mat-menu>
+                          
+                          <mat-menu #subMenu="matMenu">
+                            <button mat-menu-item>Shut down</button>
+                            <button mat-menu-item>Restart</button>
+                            <button mat-menu-item>Hibernate</button>
+                          </mat-menu>
+                          
+                          <button mat-icon-button [matMenuTriggerFor]="rootMenu">
+                            <mat-icon>more_vert</mat-icon>
+                          </button>
+                    </td>
+                    <td> {{ job.description}}   </td>
+                    <td> {{ job.level   }}    </td>   
+            </tr>
+            
+    </tbody>
+    <tbody *ngIf="!jobs">
+        <tr class="odd gradeX">
+            <!-- <td>
+                        <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                    <input type="checkbox" class="checkboxes" value="1" />
+                    <span></span>
+                </label>
+                </td> -->
+            <td> No Jobs</td>
+
+        </tr>
+
+    </tbody>
+</table>

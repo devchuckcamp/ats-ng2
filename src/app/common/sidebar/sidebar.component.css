@@ -1,0 +1,23 @@
+.sidebar-menu-container{
+    background-color: #fafafa;
+}
+.sidebar-menus{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.sidebar-menu-control{
+    border-bottom: 1px solid gray;
+}
+.sidebar-menu-control{
+    text-align: left;
+}
+.sidebar-menu-control a{
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #808080;
+}
+.sidebar-menu-control a:hover{
+    text-decoration: none;
+    cursor: pointer;
+     color: #A81D32;
+}

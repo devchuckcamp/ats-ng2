@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="page-container-wrapper col">
+    <div class="page-container row">
+        <div class="page-sidebar-wrapper col-2 hidden-md-down flex ">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="page-content-wrapper col-10">
+            <div class="page-content col no-pad">
+                <!-- BEGIN PAGE BAR -->
+                <!--<div class="page-bar">
+                    <ul class="page-breadcrumb">
+                        <li>
+                            <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']">Dashboard</a>
+                            <i class="fa fa-circle"></i>
+                        </li>
+                        <li>
+                            <a [routerLinkActive]="['router-link-active']">Account</a>
+                        </li>
+                    </ul>
+                    <div class="page-toolbar">
+                        <div id="dashboard-report-range" class="pull-right tooltips btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+                            <i class="icon-calendar"></i>&nbsp;
+                            <span class="thin uppercase hidden-xs"></span>&nbsp;
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>-->
+                <!-- END PAGE BAR -->
+                <!-- END PAGE HEADER-->
+                <router-outlet></router-outlet>
+                <!--<div class="row">
+                    <app-footer></app-footer>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,29 @@
+<div>
+  <mat-toolbar color="primary">
+    <span><mat-icon>mood</mat-icon></span>
+
+    <span>Ohabart, is coming soon!</span>
+
+    <!-- <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button> -->
+  </mat-toolbar>
+  <!-- <mat-menu x-position="before" #menu="mdMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu> -->
+
+  <mat-card>
+    <!-- <button mat-button>Check</button>
+    <button mat-raised-button>All</button> -->
+    <a mat-raised-button [routerLink]="['/home/jobs']" color="primary">Jobs</a>
+    <toaster-container [toasterconfig]="config1"></toaster-container>
+    <!-- <button mat-raised-button color="accent" (click)="popToast()">Buttons</button> -->
+  </mat-card>
+
+  <!-- <span class="done">
+    <button mat-fab>
+      <mat-icon>check circle</mat-icon>
+    </button>
+  </span> -->
+</div>
